@@ -77,16 +77,19 @@ label {
 }
 
 input {
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  padding: 5px;
-  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 input:focus {
-  border-color: #6366f1;
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
 }
 
-form:has(input:focus) input:invalid:not(:focus) {
-  border-color: red;
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #dc2626; 
+  box-shadow: 0 0 0 1px #dc2626;
 }
