@@ -2,45 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
 }
 
-section {
-    height: 100%;
-}
 
 section:first-of-type {
     width: 40%;
+    position: relative;
 }
 
 section:last-of-type {
     width: 60%;
 }
 
-section:first-of-type div  {
-    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
-    height: 100%;
+.logo-sect{
+    position: absolute;
+}
+
+section:first-of-type div img{
+    width: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section:first-of-type div div img {
+    
     height: 150px;
     width: auto;
 }
 
-section:last-of-type > div:nth-of-type(1) p {
+section:last-of-type>div:nth-of-type(1) p {
     margin-bottom: 30px;
 }
 
-section:last-of-type > div:nth-of-type(1) {
+section:last-of-type>div:nth-of-type(1) {
     padding-top: 150px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -48,10 +51,10 @@ section:last-of-type > div:nth-of-type(1) {
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(247, 247, 247);
-    
+
 }
 
-form h2{
+form h2 {
     margin: 18px 0;
     font-size: 20px;
     padding-left: 40px;
@@ -66,7 +69,7 @@ fieldset div {
 
 
 fieldset {
-    display:flex;
+    display: flex;
     border: 0;
     gap: 50px;
     padding-left: 40px;
@@ -78,29 +81,30 @@ label {
 }
 
 input {
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
-  padding: 0.5rem;
-  font-size: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 input:focus {
-  outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 1px #2563eb;
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb;
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
-  border-color: #dc2626; 
-  box-shadow: 0 0 0 1px #dc2626;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 1px #dc2626;
 }
 
 .button {
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: rgb(247, 247, 247);
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.15);
     padding-left: 40px;
+    padding-bottom: 115px;
 }
 
 
@@ -114,6 +118,6 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 a {
-    color:rgb(73, 110, 73);
+    color: rgb(73, 110, 73);
     text-decoration: none;
 }
